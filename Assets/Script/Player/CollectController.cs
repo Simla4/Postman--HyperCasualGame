@@ -25,7 +25,7 @@ public class CollectController : MonoSingleton<CollectController>
     {
         other.transform.parent = transform;
         Vector3 newPos = collectable[index].transform.localPosition;
-        newPos.z += 1;
+        newPos.z += 0.4f;
         other.transform.localPosition = newPos;
 
         collectable.Add(other);
@@ -36,7 +36,7 @@ public class CollectController : MonoSingleton<CollectController>
     private IEnumerator MakeObjectBigger()
     {
 
-        for(int i = collectable.Count - 1; i > 1; i-- )
+        for(int i = collectable.Count - 1; i > 0; i-- )
         {
             var index = i;
 
@@ -67,7 +67,7 @@ public class CollectController : MonoSingleton<CollectController>
         {
             var pos = collectable[i].transform.localPosition;
             pos.x = collectable[0].transform.localPosition.x;
-            collectable[i].transform.DOLocalMove(pos, 0.7f);
+            collectable[i].transform.DOLocalMove(pos, 0);
         }
     }
     
