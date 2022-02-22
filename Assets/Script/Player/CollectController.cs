@@ -19,6 +19,10 @@ public class CollectController : MonoSingleton<CollectController>
         {
             MoveOrigin();
         }
+        else if(Input.GetButtonUp("Fire1"))
+        {
+            MoveOrigin();
+        }
     }
 
     public void StackObject(GameObject other, int index)

@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CollisionwithCollectable : MonoBehaviour
+public class Collision : MonoBehaviour
 {
     private void OnTriggerEnter(Collider other)
     {
@@ -12,7 +12,7 @@ public class CollisionwithCollectable : MonoBehaviour
             {
                 other.GetComponent<BoxCollider>().isTrigger = false;
                 other.gameObject.tag = "Collected";
-                other.gameObject.AddComponent<CollisionwithCollectable>();
+                other.gameObject.AddComponent<Collision>();
 
                 CollectController.Instance.StackObject(other.gameObject, CollectController.Instance.collectable.Count - 1);
             }
