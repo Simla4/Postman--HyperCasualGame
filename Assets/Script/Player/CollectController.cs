@@ -11,26 +11,23 @@ public class CollectController : MonoSingleton<CollectController>
 
     private void Update()
     {
-        if(Input.GetButton("Fire1"))
-        {
-            MoveListElements();
-        }
-        if(Input.GetButtonDown("Fire1"))
+        MoveListElements();
+        /*if(Input.GetButtonDown("Fire1"))
         {
             MoveOrigin();
         }
         else if(Input.GetButtonUp("Fire1"))
         {
             MoveOrigin();
-        }
+        }*/
     }
 
     public void StackObject(GameObject other, int index)
     {
         other.transform.parent = transform;
-        Vector3 newPos = collectable[index].transform.localPosition;
+        Vector3 newPos = collectable[index].transform.position;
         newPos.z += 0.4f;
-        other.transform.localPosition = newPos;
+        other.transform.position = newPos;
 
         collectable.Add(other);
 
@@ -56,15 +53,23 @@ public class CollectController : MonoSingleton<CollectController>
 
     private void MoveListElements()
     {
-        for(int i = 1; i < collectable.Count; i++)
+        /*for(int i = 1; i < collectable.Count; i++)
         {
             var pos = collectable[i].transform.localPosition;
             pos.x = collectable[i - 1].transform.localPosition.x;
             collectable[i].transform.DOLocalMove(pos, movementDelay);
+        }*/
+        
+        for(int i = 0; i < collectable.Count-1; i++)
+        {
+            var pos = collectable[i].transform.position.x;
+            //pos.x = collectable[i + 1].transform.localPosition.x;
+            collectable[i+1].transform.DOMoveX(pos, movementDelay);
         }
+        
     }
 
-    private void MoveOrigin()
+    /*private void MoveOrigin()
     {
 
         for (int i = 1; i < collectable.Count; i++)
@@ -73,6 +78,6 @@ public class CollectController : MonoSingleton<CollectController>
             pos.x = collectable[0].transform.localPosition.x;
             collectable[i].transform.DOLocalMove(pos, 0);
         }
-    }
+    }*/
     
 }
