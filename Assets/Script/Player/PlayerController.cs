@@ -91,6 +91,7 @@ public class PlayerController : MonoBehaviour
         if (Input.GetMouseButtonUp(0) && !isGameStart) //for tap to start
         {
             isGameStart = true;
+            AnimationManager.Instance.ChangeAnimation(transform.GetChild(0).gameObject,PlayerAnimations.Running.ToString());
         }
     }
 }
