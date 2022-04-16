@@ -24,7 +24,7 @@ public class CollectController : MonoSingleton<CollectController>
 
     public void StackObject(GameObject other, int index)
     {
-        other.transform.parent = transform;
+        other.transform.parent = collectable[0].transform.parent;
         Vector3 newPos = collectable[index].transform.position;
         newPos.z += 0.4f;
         other.transform.position = newPos;
