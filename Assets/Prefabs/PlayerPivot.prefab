@@ -176,18 +176,3 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 869069d2b309703408ecf28291ccf43e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &3736242446569849836
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4546565673770701529}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1b3e3d1632f84ff4f88d05a9fccd9910, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  collectable:
-  - {fileID: 4546565673770701529}
-  movementDelay: 0.1
