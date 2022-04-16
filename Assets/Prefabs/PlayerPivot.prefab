@@ -46,7 +46,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerRoot: {fileID: 3770486817705822307}
   speed: 7.5
-  sidewaysMovementSensivity: 0.03
+  sidewaysMovementSensivity: 0.5
+  sidewaysMovementLerpSensivity: 10
   sidewaysLimitPos: 2.5
 --- !u!1001 &3736242447284137864
 PrefabInstance:
