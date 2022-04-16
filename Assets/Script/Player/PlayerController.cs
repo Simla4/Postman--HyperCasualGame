@@ -14,12 +14,21 @@ public class PlayerController : MonoBehaviour
     private Vector3 inputDrag;
     private Vector2 prevMousePos;
     private float sideMovementTarget;
+
+    private bool isGameStart;
+    private bool isMiniGameStart;
+    
     // Update is called once per frame
     void Update()
     {
-        PlayerMovement();
+        /*PlayerMovement();
+        GetInput();
+        MoveSideways();*/
+        
         GetInput();
         MoveSideways();
+        if (isMiniGameStart || !isGameStart) return;
+        PlayerMovement();
     }
     private Vector2 mousePositionCM
     {
@@ -76,6 +85,12 @@ public class PlayerController : MonoBehaviour
         else
         {
             inputDrag = Vector2.zero;
+        }
+        
+        
+        if (Input.GetMouseButtonUp(0) && !isGameStart) //for tap to start
+        {
+            isGameStart = true;
         }
     }
 }

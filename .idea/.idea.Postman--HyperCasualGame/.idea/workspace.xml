@@ -5,10 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d7358c93-dc76-492f-8643-368884162d43" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Envolope.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Envolope.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/PlayerPivot.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/PlayerPivot.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Olcay_Scene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Olcay_Scene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/Collectables/CollisionObstacle.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Collectables/CollisionObstacle.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Postman--HyperCasualGame/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Postman--HyperCasualGame/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/Player/PlayerController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Player/PlayerController.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -72,7 +70,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1650102605387</updated>
-      <workItem from="1650102631095" duration="4836000" />
+      <workItem from="1650102631095" duration="5516000" />
     </task>
     <servers />
   </component>
