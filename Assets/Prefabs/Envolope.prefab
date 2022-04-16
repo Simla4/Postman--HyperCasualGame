@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 7351171376240381530}
   - component: {fileID: 8197974960332189780}
   - component: {fileID: 8197974960332189776}
-  - component: {fileID: 743533234}
+  - component: {fileID: -8562330829664589112}
   m_Layer: 0
   m_Name: Envolope
   m_TagString: Collectable
@@ -54,6 +54,7 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -114,7 +115,7 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1.3197504, y: 0.985669, z: 0.099999994}
   m_Center: {x: 0, y: 0.4871559, z: 0}
---- !u!114 &743533234
+--- !u!114 &-8562330829664589112
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

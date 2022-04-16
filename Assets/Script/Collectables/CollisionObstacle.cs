@@ -14,9 +14,7 @@ public class CollisionObstacle : MonoBehaviour
             temporaryVFXPos.y += 1f;
             temporaryVFXPos.z -= 0.5f;
             temporaryVFX.transform.position = temporaryVFXPos;
-            Destroy(gameObject);
             Destroy(temporaryVFX,0.5f);
-            CollectController.Instance.collectable.Remove(gameObject);
         }
     }
 }
