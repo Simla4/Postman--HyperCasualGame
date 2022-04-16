@@ -28,13 +28,12 @@ public class PlayerController : MonoBehaviour
 
     private void MoveSideways()
     {
-        var currentPlayerPos = playerRoot.localPosition;
+        //var currentPlayerPos = playerRoot.localPosition;
        
         var dragPos = Vector3.right * inputDrag.x * sidewaysMovementSensivity ;
-        if (currentPlayerPos.x + dragPos.x < sidewaysLimitPos && currentPlayerPos.x + dragPos.x > -sidewaysLimitPos)
-        {
-            playerRoot.localPosition += dragPos;
-        }
+        playerRoot.localPosition += dragPos;
+        var sideMovementLimits = Mathf.Clamp( playerRoot.localPosition.x, -sidewaysLimitPos, sidewaysLimitPos);
+        playerRoot.localPosition = new Vector3(sideMovementLimits,playerRoot.localPosition.y,playerRoot.localPosition.z);
     }
 
     private void GetInput()
